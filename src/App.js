@@ -1,12 +1,15 @@
 import React, {Component} from 'react';
 import PhoneForm from './components/PhoneForm';
 
-function App() {
+class App extends Component {
+  render(){
   return (
     <div>
-      <PhoneForm />
+      <PhoneForm 
+          onCreate= {this.handleCreate}/>
     </div>
   );
+  }
 }
 
 export default App;
